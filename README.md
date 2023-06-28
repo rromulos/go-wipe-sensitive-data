@@ -155,4 +155,5 @@ ok  	github.com/rromulos/go-clean-sensitive-data/tests
 
 ## Screenshots - Postman
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![image](https://github.com/rromulos/go-clean-sensitive-data/assets/27534241/16283a2d-2b41-4945-b9cd-93f193872029)
+
