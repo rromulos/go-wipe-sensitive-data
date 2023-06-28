@@ -110,11 +110,7 @@ func TestFilterJSON_InvalidJSON(t *testing.T) {
 	invalidJSON := []byte(`{"name": "John Doe", "email": "johndoe@example.com", "age": 30, "address": {"street": "123 Main St", "city": "New York"}`)
 
 	var invalidJSONConverted map[string]interface{}
-	err := json.Unmarshal(invalidJSON, &invalidJSONConverted)
-	if err != nil {
-		t.Error(err)
-		return
-	}
+	json.Unmarshal(invalidJSON, &invalidJSONConverted)
 
 	filteredData := internal.FilterJSON(invalidJSONConverted, "", nil)
 	if filteredData != nil {
